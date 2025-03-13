@@ -1,13 +1,13 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Header from "./components/header";
 import Home from "./pages/home";
+import Navbar from "./components/navbar";
 import Kategori from "./pages/kategori";
 import ProductDetail from "./pages/detailProduct";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <main className="container mx-auto p-4">
         <Routes>
           <Route path="/" element={<Home />} />
