@@ -28,6 +28,9 @@ const Navbar = () => {
               <Link to="/kategori/elektronik">Elektronik</Link>
               <Link to="/kategori/fashion">Fashion</Link>
               <Link to="/kategori/makanan">Makanan</Link>
+              <Link to="/kategori/rumahtangga">Rumah tangga</Link>
+              <Link to="/kategori/kesehatan">Kesehatan</Link>
+              <Link to="/kategori/kecantikan">kecantikan</Link>
             </div>
           )}
         </div>
