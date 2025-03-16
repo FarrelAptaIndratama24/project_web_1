@@ -55,7 +55,7 @@ const Navbar = () => {
             Login
           </Link>
           <Link to="/signup" className="signup-btn">
-            Signup
+            daftar
           </Link>
         </div>
       </div>

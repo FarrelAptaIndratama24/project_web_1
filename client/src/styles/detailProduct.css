@@ -1,0 +1,237 @@
+.product-detail {
+  padding: 1rem;
+}
+
+.product-detail h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.detail-container {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Bagian Kiri: Gambar */
+.image-section {
+  flex: 1;
+}
+
+.main-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background-color: #d1d5db; /* Placeholder jika gambar gagal dimuat */
+}
+
+.thumbnail-grid {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.thumbnail img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  background-color: #d1d5db; /* Placeholder */
+  cursor: pointer;
+}
+
+/* Bagian Kanan: Detail Produk */
+.detail-section {
+  flex: 2;
+}
+
+.detail-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.detail-price {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.color-options h3,
+.size-options h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.color-buttons,
+.size-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.color-btn,
+.size-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  background-color: #f3f4f6;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.color-btn:hover,
+.size-btn:hover {
+  transform: scale(1.05);
+}
+
+.color-btn.selected,
+.size-btn.selected {
+  border: 2px solid #ef4444;
+  background-color: #fee2e2;
+}
+
+/* Panel Samping: Atur Jumlah Pesanan */
+.order-panel {
+  width: 250px;
+  border: 1px solid #000000;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: sticky;
+  top: 80px;
+  background-color: #fff;
+  box-shadow: #000000;
+}
+
+.order-panel h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-input {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* .order-input label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-input input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-family: "Poppins", sans-serif;
+} */
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #e5e7eb;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.stock-info {
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtotal {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtotal span {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Tombol Masukkan Keranjang */
+.add-to-cart-btn {
+  width: 100%;
+  background-color: #ffffff; /* Warna oranye */
+  color: rgb(255, 0, 0);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid red;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.5rem; /* Jarak dari tombol Beli */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ffffff; /* Warna oranye lebih gelap saat hover */
+}
+
+/* Tombol Beli */
+.buy-btn {
+  width: 100%;
+  background-color: #ef4444;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid red;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.buy-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  .detail-container {
+    flex-direction: column;
+  }
+
+  .main-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .order-panel {
+    position: static;
+    width: 100%;
+  }
+}
