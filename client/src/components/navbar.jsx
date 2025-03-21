@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
 
         {/* Cart Icon */}
-        <Link to="/cart" className="cart-icon">
+        <Link to="/cartPage" className="cart-icon">
           <FaShoppingCart />
         </Link>
 

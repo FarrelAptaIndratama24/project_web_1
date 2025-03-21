@@ -5,6 +5,7 @@ import Kategori from "./pages/kategori";
 import ProductDetail from "./pages/detailProduct";
 import Login from "./pages/loginPage"; // Impor halaman Login
 import Signup from "./pages/signupPage";
+import CartPage from "./pages/cartPage";
 
 const MainLayout = ({ children }) => {
   return (
@@ -42,6 +43,14 @@ function App() {
         element={
           <MainLayout>
             <ProductDetail />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/cartPage"
+        element={
+          <MainLayout>
+            <CartPage />
           </MainLayout>
         }
       />
